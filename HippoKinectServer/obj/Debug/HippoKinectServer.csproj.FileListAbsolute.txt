@@ -1,0 +1,6 @@
+E:\WorkSpace\GitHub\HippoKinectServer\HippoKinectServer\bin\Debug\HippoKinectServer.exe.config
+E:\WorkSpace\GitHub\HippoKinectServer\HippoKinectServer\obj\Debug\HippoKinectServer.csprojResolveAssemblyReference.cache
+E:\WorkSpace\GitHub\HippoKinectServer\HippoKinectServer\bin\Debug\HippoKinectServer.exe
+E:\WorkSpace\GitHub\HippoKinectServer\HippoKinectServer\bin\Debug\HippoKinectServer.pdb
+E:\WorkSpace\GitHub\HippoKinectServer\HippoKinectServer\obj\Debug\HippoKinectServer.exe
+E:\WorkSpace\GitHub\HippoKinectServer\HippoKinectServer\obj\Debug\HippoKinectServer.pdb
