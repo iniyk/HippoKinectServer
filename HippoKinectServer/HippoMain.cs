@@ -13,7 +13,6 @@ namespace HippoKinectServer {
         const int NO_CONNECTION = 0;
         const int ALIVE_CONNECTION = 1;
 
-
         static Queue action_list = new Queue();
         static int pipe_state;
         static int kinect_state;
@@ -27,8 +26,8 @@ namespace HippoKinectServer {
             thread_KinnectControaller.Start();
 
             #region Test Code
-            Thread thread_Test = new Thread(new ThreadStart(Thread_Test));
-            thread_Test.Start();
+            //Thread thread_Test = new Thread(new ThreadStart(Thread_Test));
+            //thread_Test.Start();
             #endregion
 
             Thread_Hoster();
@@ -56,7 +55,7 @@ namespace HippoKinectServer {
 
         static void Thread_KinnectControaller() {
             //Wait Thread Hoster init
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
             GlobalHelper.LOG("MESSAGE", "Thread KinnectControaller Light up.");
         }
 

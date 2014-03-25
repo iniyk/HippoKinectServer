@@ -38,11 +38,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionIdentifier.cs" />
     <Compile Include="GlobalHelper.cs" />
     <Compile Include="HippoMain.cs" />
+    <Compile Include="KinectController.cs" />
     <Compile Include="MessageSender.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Kinect, Version=1.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -2,6 +2,8 @@
 using System.IO;
 using System.Collections;
 
+using Microsoft.Kinect;
+
 namespace HippoKinectServer {
     public class GlobalHelper {
         public const string SECRET_WORD = "uIIde34ewD";
@@ -42,6 +44,7 @@ namespace HippoKinectServer {
         public static void Init() {
             log_list = new Queue();
             lock (log_list) {
+                log_list = new Queue();
                 log_list.Clear();
             }
         }
@@ -81,4 +84,32 @@ namespace HippoKinectServer {
             name = _name;
         }
     }
+
+     class JointData {
+        public double x, y, z;
+        public JointType type;
+        public JointData() {
+
+        }
+        public JointData(JointType _type, double _x, double _y, double _z) {
+            x = _x; y = _y; z = _z;
+            type = _type;
+        }
+    }
+
+    class ActionData {
+
+    }
+
+    public class StandardPosture : Action {
+        private double delta;
+        public const double AUTO_DELTA = 20.0;
+        public StandardPosture() {
+
+        }
+        //public StandardPosture(ActionData ad, double delta = AUTO_DELTA) {
+
+        //}
+    }
+
 }
